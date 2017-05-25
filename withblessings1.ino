@@ -106,6 +106,7 @@ void SendInfo(){ // Send the most recently aquired frame.
   for( i = 0; i < DATA_SIZE - 1; i++){// sende the frame to serial port till end of the frame one element at a time.
     Serial.print(Frame[i]); 
     Serial.print(' ');// This is for display formating in serial terminal
+    Serial.print(' ');// This is for display formating in serial terminal
   }
   Serial.write("\n");
   return;
